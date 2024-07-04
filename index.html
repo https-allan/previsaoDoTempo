@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Previsão do Tempo</title>
+</head>
+
+<body>
+    <div class="container">
+        <input class="input_city" type="text" placeholder="Digite o nome da cidade">
+        <button class="search" onclick="searchCity()">
+            <img class="magnifying_glass" src="https://www.svgrepo.com/show/488200/find.svg" alt="">
+        </button>
+
+        <div class="weather">
+            <h2 class="city_name">Tempo em Cuiaba</h2>
+            <p class="temperature">21°C</p>
+
+            <div class="content">
+                <img class="icon" src="https://openweathermap.org/img/wn/04n.png" alt="">
+                <p class="forecast">Nublado</p>
+            </div>
+
+            <p class="moisture">Umidade: 70%</p>
+        </div>
+    </div>
+
+    <script src="js/app.js" defer></script>
+</body>
+
+</html>
