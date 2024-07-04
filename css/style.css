@@ -14,62 +14,69 @@ body {
   background: url(/assets/img/RwHv7LgeC7s-unsplash.jpg) center / cover;
 
   & .container {
-    width: 65%;
-    max-width: 420px;
-    padding: 20px;
-    border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 
-    & .input_city {
-      width: calc(100% - 50px);
-      border: none;
-      outline: none;
-      padding: 10px;
-      font-size: 18px;
+    & .content-wrapper {
+      width: 95%;
+      max-width: 420px;
+      padding: 20px;
       border-radius: 25px;
-      color: #fff;
-      background-color: #7c7c7c2b;
-    }
+      background-color: rgba(0, 0, 0, 0.8);
 
-    & .search {
-      border: none;
-      padding: 10px;
-      border-radius: 100%;
-      float: right;
-      cursor: pointer;
-      background-color: #7c7c7c2b;
-
-      & .magnifying_glass {
-        width: 20px;
-      }
-    }
-
-    & .weather {
-      margin-top: 10px;
-
-      & .temperature {
-        margin-top: 20px;
-        font-size: 20px;
+      & .input_city {
+        width: calc(100% - 50px);
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 25px;
         color: #fff;
-      }
-      & .city_name {
-        font-size: 28px;
-        color: #fff;
+        background-color: #7c7c7c2b;
       }
 
-      .content {
-        display: flex;
-        align-items: center;
+      & .search {
+        border: none;
+        padding: 10px;
+        border-radius: 100%;
+        float: right;
+        cursor: pointer;
+        background-color: #7c7c7c2b;
 
-        & .forecast {
-          text-transform: capitalize;
-          color: #fff;
+        & .magnifying_glass {
+          width: 20px;
         }
       }
 
-      & .moisture {
-        margin-top: 20px;
-        color: #fff;
+      & .weather {
+        margin-top: 10px;
+
+        & .temperature {
+          margin-top: 20px;
+          font-size: 20px;
+          color: #fff;
+        }
+        & .city_name {
+          font-size: 28px;
+          color: #fff;
+        }
+
+        .content {
+          display: flex;
+          align-items: center;
+
+          & .forecast {
+            text-transform: capitalize;
+            color: #fff;
+          }
+        }
+
+        & .moisture {
+          margin-top: 20px;
+          color: #fff;
+        }
       }
     }
   }
